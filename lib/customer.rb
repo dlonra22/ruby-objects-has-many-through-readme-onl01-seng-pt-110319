@@ -19,7 +19,7 @@ class Customer
   end
   
   def waiters
-   meals = Meal.all.select {|m| m.customer == self
+   meals = Meal.all.select {|m| m.customer == self}
    meals.collect { |ml| ml.waiter}
   end
 end
